@@ -64,3 +64,10 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 
 %% Путь к каталогу с рисунками
 \graphicspath{{fig/}}
+
+%% Внесение titlepage в учёт счётчика страниц
+\makeatletter
+\renewenvironment{titlepage} {
+ \thispagestyle{empty}
+}
+\makeatother
